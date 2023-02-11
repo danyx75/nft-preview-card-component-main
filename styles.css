@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+    color: gray;
+}
+
+.attribution a {
+    color: white; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem 1.5rem .8rem 1.5rem;
+    max-width: 350px;
+    border-radius: .5rem;
+}
+
+.main-img {
+    position: relative;
+}
+
+.main-img div {
+    position: absolute;
+    top: 0;
+    background-color: hsla(178, 100%, 50%, 40%);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    border-radius: .5rem;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.main-img div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-img div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.img {
+    max-width: 100%;
+    border-radius: .5rem;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 1.2rem 0;
+}
+
+.line-space {
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.color-style {
+    color: hsl(215, 51%, 70%);
+}
+
+section.list-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+}
+
+.list-color {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+hr {
+    color: hsl(215, 32%, 27%);
+    margin: .5rem 0 1rem 0;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.user-profile {
+    margin-right: 1rem;
+    max-width: 12%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.author {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.hover-effect:hover {
+    color: hsl(178, 100%, 50%);
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
